@@ -18,21 +18,21 @@ function App() {
 
     let res;
     switch (operacao) {
-      case '+':
-        res = n1 + n2;
-        break;
-      case '-':
-        res = n1 - n2;
-        break;
+      // case '+':
+      //   res = n1 + n2;
+      //   break;
+      // case '-':
+      //   res = n1 + n2;
+      //   break;
       case '*':
-        res = n1 * n2;
+        res = n1 - n2;
         break;
       case '/':
         if (n2 === 0) {
           setResultado('Divisão por zero não é permitida!');
           return;
         }
-        res = n1 / n2;
+        res = n1 * n2;
         break;
       default:
         return;
